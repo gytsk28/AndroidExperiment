@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    //左侧
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lenth:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/lenth_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="       lenth_first"
+                android:text=""
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/output_len"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="lenth_second"
+                android:gravity="right"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/fir_mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="毫米"/>
+
+            <Button
+                android:id="@+id/fir_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="厘米"/>
+            <Button
+                android:id="@+id/fir_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="米"/>
+            <Button
+                android:id="@+id/sec_mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="毫米"/>
+            <Button
+                android:id="@+id/sec_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="厘米"/>
+            <Button
+                android:id="@+id/sec_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="米"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="volume:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/volume_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="volume_first"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/output_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="volume_second"
+                android:gravity="right"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/fir_ccm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="立方厘米"/>
+
+            <Button
+                android:id="@+id/fir_stere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="立方米"/>
+            <Button
+                android:id="@+id/fir_litre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="升"/>
+            <Button
+                android:id="@+id/sec_ccm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="立方厘米"/>
+            <Button
+                android:id="@+id/sec_stere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="立方米"/>
+            <Button
+                android:id="@+id/sec_litre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="升"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="system:"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/system_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="system_first"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/output_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="system_second"
+                android:gravity="right"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/fir_sys2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="二进制"/>
+
+            <Button
+                android:id="@+id/fir_sys8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="八进制"/>
+            <Button
+                android:id="@+id/fir_sys10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="十进制"/>
+            <Button
+                android:id="@+id/sec_sys2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="二进制"/>
+            <Button
+                android:id="@+id/sec_sys8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="八进制"/>
+            <Button
+                android:id="@+id/sec_sys10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnClick"
+                android:text="十进制"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //右侧按键
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:layout_gravity="center_vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/land_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/land_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/land_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="9"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/land_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/land_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/land_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/land_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/land_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/land_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/land_CE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="CE"/>
+
+        <Button
+            android:id="@+id/land_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/land_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:text="."/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
